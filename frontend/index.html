@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Outline Extractor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📄 PDF Outline Extractor</h1>
+
+    <form id="uploadForm">
+      <input type="file" id="pdfFile" accept="application/pdf" required />
+      <button type="submit">Upload & Extract</button>
+    </form>
+
+    <div id="spinner" class="spinner" style="display: none;"></div>
+
+    <div id="output" class="json-box"></div>
+
+    <button id="downloadBtn" style="display: none;">⬇️ Download JSON</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
